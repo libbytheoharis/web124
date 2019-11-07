@@ -1,0 +1,38 @@
+/* Libby Wichman
+*  Project 6
+*  2019-10-14
+*/
+
+
+#outerwrapper {
+   width: 90%;
+   margin: 0 auto 0 auto;
+   padding: 0.5em 1.5em;
+   background-color: #eee;
+}
+
+.oneLine {
+   display: flex;
+}
+
+/* .oneLine::after {
+   content: "";
+   clear: both;
+} */
+
+.imagesOneLine {
+   flex: 33.33%
+   padding: 5px;
+}
+
+.html {
+   color: #00f;
+}
+
+.css {
+   color: #FF69B4;
+}
+
+.javascript {
+   color: #2fb74f;
+}

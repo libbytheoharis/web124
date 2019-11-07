@@ -1,0 +1,53 @@
+/* Libby Wichman - 2019-09-24 */
+/* Adapted from http://javascript30.com/ */
+/* Hold Shift and Checkboxes */
+/* What I did:
+   - Altered the selector for the input when checked to include the label and removed the paragraph selector.
+   - Changed the text color property to gray when the associated box is checked.
+*/
+
+html {
+  font-family: sans-serif;
+  background: #ffc600;
+}
+
+.inbox {
+  max-width: 400px;
+  margin: 50px auto;
+  background: white;
+  border-radius: 5px;
+  box-shadow: 10px 10px 0 rgba(0,0,0,0.1);
+}
+
+.item {
+  display: flex;
+  align-items: center;
+  border-bottom: 1px solid #F1F1F1;
+}
+
+.item:last-child {
+  border-bottom: 0;
+}
+
+/* Changed the p to the label*/
+input:checked + label {
+  background: #F9F9F9;
+  text-decoration: line-through;
+  /* Added the gray color to the checked box.*/
+  color: gray;
+}
+
+input[type="checkbox"] {
+  margin: 20px;
+}
+
+p {
+  margin: 0;
+  padding: 20px;
+  transition: background 0.2s;
+  flex: 1;
+  font-family: 'helvetica neue';
+  font-size: 20px;
+  font-weight: 200;
+  border-left: 1px solid #D1E2FF;
+}

@@ -1,0 +1,20 @@
+/* Libby Wichman - 2019-09-07 */
+/* Adapted from http://javascript30.com/ */
+/* Array Cardio */
+/* What I did:
+   I created a css file that was not present.
+   The original project JUST output values to the console log.
+   Instead of using the console, I placed some heading and paragraphs in the HTML so the output can be seen on the page.
+   The styling here is pretty minimal, but all of it is new.
+*/
+
+html {
+     background: #ffc600;
+     font-family: 'helvetica neue';
+     font-size: 20px;
+     font-weight: 200;
+   }
+
+body {
+     margin: 0;
+   }

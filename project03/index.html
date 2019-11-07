@@ -1,0 +1,269 @@
+<!DOCTYPE html>
+<!-- Libby Wichman 09/09/2019-->
+<!-- Project 3 -->
+<html lang="en">
+   <head>
+      <title>PROJECT 3</title>
+      <meta charset="utf-8" />
+      <!-- Meta tags are used by search engines -->
+      <meta name="author" content="Libby Wichman">
+      <meta name="description" content="Project 3 for WEB 124">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <link rel="stylesheet" href="web124projects.css">
+   </head>
+   <body>
+      <div id="outerwrapper">
+      <h1>WEB 124 - Project 3</h1>
+      <main>
+      <h2>Chapter Debrief</h2>
+         <p id="q1">Why do some of JavaScript's Built In Objects have "properties" that are treated as methods in other languages? For example, stringVarJS.length; vs stringVarCpp.length();</p>
+         <p id="q2">Is the Object Constructor more like a blank Object than a template? I think at the beginning, I was thinking of the object constructure more like a declared constructor (like a defined object with a constructor)...less like a completely blank thing. </p>
+         <p id="q3">How often is the innerHTML used now? Probably not at companies, but is it still a large problem?</p>
+      <hr>
+      <h2>JavaScript Variable Names</h2>
+         <table>
+            <tr>
+               <th>variable name</th>
+               <th>valid? yes or no</th>
+               <th>If NOT valid, why NOT? If valid, from a best practices standpoint, is this a good variable name or not? If NOT, why NOT?</th>
+            </tr>
+            <tr>
+               <th><code class="javascript">JCCC</code></th>
+               <td class="yesOrNo">no</td>
+               <td>This is not valid from a best practices standpoint. Generally built in objects have the first character of their name capitalized. It is also good practice to use camel case when naming variables, so JCCC in all lower case would be better.</td>
+            </tr>
+            <tr>
+      			<th><code class="javascript">1jccc</code></th>
+      			<td class="yesOrNo">no</td>
+      			<td>Variables cannot be named starting with a number value. This is not considered a valid variable name in javascript. Variable names must begin with either a letter, a dollar sign ($), or an underscore.</td>
+      		</tr>
+      		<tr>
+      			<th><code class="javascript">jccc</code></th>
+      			<td class="yesOrNo">yes</td>
+      			<td>This variable is all lower case, which is good variable naming practice in javascript. It is important to be consistent, so all lower case makes sense in this context.</td>
+      		</tr>
+      		<tr>
+      			<th><code class="javascript">jccc-ks</code></th>
+      			<td class="yesOrNo">no</td>
+      			<td>The only non-alphanumeric characters allowed in variable names in javascript is either a dollar sign ($) or an underscore (_). A dash is not one of the valid characters allowed in variable names.</td>
+      		</tr>
+      		<tr>
+      			<th><code class="javascript">jccc.ks</code></th>
+      			<td class="yesOrNo">no</td>
+      			<td>A period (.) is not one of the two valid non-alphanumeric characters allowed inside JavaScript variable names. Only the dollar sign and the underscore sign are allowed in variable names.</td>
+      		</tr>
+      		<tr>
+      			<th><code class="javascript">var</code></th>
+      			<td class="yesOrNo">no</td>
+      			<td>The JavaScript keywords or reserved words are not allowed to be variable names. Var (or var) is considered a reserved word and is not allowed.</td>
+      		</tr>
+      		<tr>
+      			<th><code class="javascript">function</code></th>
+      			<td class="yesOrNo">no</td>
+      			<td>The word function is another key word or reserved word in JavaScript. It is not allowed to be used in variable names.</td>
+      		</tr>
+      		<tr>
+      			<th><code class="javascript">streetaddress</code></th>
+      			<td class="yesOrNo">no</td>
+      			<td>The word streetaddress is not a valid variable name from a best practices standpoint. If a variable name contains two words, like streetaddress, the developer should use camel case. Camel case places a capital letter for the first letter of every word after the first word within a variable name. This makes the names easier to read and it is easier to be consistent throughout your code.</td>
+      		</tr>
+      		<tr>
+      			<th><code class="javascript">streetAddress</code></th>
+      			<td class="yesOrNo">yes</td>
+      			<td>This is a valid variable name and uses good practices. The variable name is descriptive and uses camel case to ensure maximum readability.</td>
+      		</tr>
+      		<tr>
+      			<th><code class="javascript">StreetAddress</code></th>
+      			<td class="yesOrNo">no</td>
+      			<td>It is not good practice to capitalize both the first and and the words after within a variable name that is made up of more than one word. It is better to use camel casing, which only capitalizes the first letter of every word after the first. This ensures consistency, readability and avoids confusion with built in objects.</td>
+      		</tr>
+      		<tr>
+      			<th><code class="javascript">street-Address</code></th>
+      			<td class="yesOrNo">no</td>
+      			<td>This variable name contains a non-alphanumeric character that is not $ or _. Only $ and _ are allowed within variable names in JavaScript.</td>
+      		</tr>
+      	</table>
+      <hr>
+      <h2>JavaScript Arrays!</h2>
+         <p id="p1">Web Development & Digital Media</p>
+         <p id="p2">Web Development & Digital Media</p>
+         <p id="p3">Web Development & Digital Media</p>
+         <p id="p4">Web Development & Digital Media</p>
+         <p id="p5">Web Development & Digital Media</p>
+         <p id="p6">Web Development & Digital Media</p>
+         <p id="p7">Web Development & Digital Media</p>
+         <p id="p8">Web Development & Digital Media</p>
+         <p id="p9">Web Development & Digital Media</p>
+         <script src="scripts/project3.js"></script>
+      <hr>
+      <h2>Array Review Questions:</h2>
+         <p id="p10">There is no real difference. Just be consistent.</p>
+         <p id="p11">The textContent is a much more straight forward solution. It passes a string into the HTML element. The innerHTML should not be used for two reasons. One, it's not as straight forward. Do you really need to insert and entire element into the code to pass a string value? Seems a bit much. Second, it creates a security vulnerability from the end user standpoint. InnerHTML can be used to insert unwanted and harmful javascript into the user's browser. This has been exploited for malicious purposes in the past and still can create issues if used irresponsibility.</p>
+         <p id="p12">I definitely think referencing an array value is much faster and may be used again and again later in the code. It also ensures consistency, because if there is a type-o in one of the months...it only needs to be fixed once, at the source.</p>
+      <hr>
+      <h2>Function Terminology</h2>
+      <table>
+			<tr>
+				<th>term</th>
+				<th>definition</th>
+			</tr>
+			<tr>
+				<th><span class="keyword">function</span></th>
+				<td>A function allows the developer to group statements together that perform a specified task.</td>
+			</tr>
+			<tr>
+				<th><span class="keyword">statement</span></th>
+				<td>In JavaScript, a statement is an individual step or instruction that ends with a semicolon.</td>
+			</tr>
+			<tr>
+				<th><span class="keyword">parameter</span></th>
+				<td>A parameter is a piece of information provided to a function in order for the function to complete its specific task. They represent the values that will be passed to the function when the function is called.</td>
+			</tr>
+			<tr>
+				<th><span class="keyword">argument</span></th>
+				<td>An argument refers to the specific values that are used to calculate the return value for a function.</td>
+			</tr>
+			<tr>
+				<th><span class="keyword">return value</span></th>
+				<td>This is the expected response from a function after a task is preformed.</td>
+			</tr>
+			<tr>
+				<th><span class="keyword">function declaration</span></th>
+				<td>A function declaration creates a function containing the code used to perform that function's task when it is called in the code.</td>
+			</tr>
+			<tr>
+				<th><span class="keyword">function expression</span></th>
+				<td>A function expression is placed where one might expect to see an expression. It may or may not have a name and is located where the interpreter would normally see an expression.</td>
+			</tr>
+			<tr>
+				<th><span class="keyword">anonymous function</span></th>
+				<td>An anonymous function is a function without a name.</td>
+			</tr>
+			<tr>
+				<th><span class="keyword">immediately invoked function expression</span></th>
+				<td>These functions do not have names. They are executed once the interpreter encounters them.</td>
+			</tr>
+		</table>
+      <hr>
+      <h2>Function Review Questions</h2>
+         <p id="f1">A function without parameters can be called with empty parenthesis following the variable name, then ending with a semicolon: <code class="javascript">showTotal();</code>.</p>
+         <p id="f2">The code, <code class="javascript">showTotal(2,10);</code> can be used to pass the 2 for the tax and 10 for the total parameters.</p>
+         <p id="f3">The code, <code class="javascript">showTotal(stateTax, totalBeforeTax);</code> can be used to pass the stateTax variable for the tax and the totalBeforeTax variable for the total parameters.</p>
+      <hr>
+      <h2>Variable Scope Questions</h2>
+         <p id="s1">The <code class="javascript">"use strict"</code> statement at the beginning of the javascript file forces the developer to explicitly declare all variables.</p>
+         <p id="s2">There are two ways to create a global variable. The first is declaring the variable in the javascript file that is not inside of a function. This will declare the variable at the global, or window-level. The second way is to not use the keyword <code class="javascript">var</code> prior to the variable name.</p>
+         <p id="s3">The keyword used to create a block-level variable is <code class="javascript">var</code>. The <code class="javascript">let</code> and <code class="javascript">const</code> keywords are also used to declare variables.</p>
+      <hr>
+      <h2>Object Terminology</h2>
+      <table>
+			<tr>
+				<th>term</th>
+				<th>definition</th>
+			</tr>
+			<tr>
+				<th><span class="keyword">object</span></th>
+				<td>Objects are a model of something in the real world. They contain a set of variables and/or functions.</td>
+			</tr>
+			<tr>
+				<th><span class="keyword">property</span></th>
+				<td>Properties are variables that are a part of an object.</td>
+			</tr>
+			<tr>
+				<th><span class="keyword">method</span></th>
+				<td>Methods are functions that are a part of an object.</td>
+			</tr>
+			<tr>
+				<th><span class="keyword">key</span></th>
+				<td>A key is the name of a property or method of an object.</td>
+			</tr>
+			<tr>
+				<th><span class="keyword">literal notation</span></th>
+				<td>Literal notation is explicitly stating each key and value of an object between curly braces, after declaring the object's name. Each key and its value are separated by a colon. Each property and method are separated with a comma, exclude the comma after the last property or method.</td>
+			</tr>
+			<tr>
+				<th><span class="keyword">dot notation</span></th>
+				<td>Dot notation allows access to the properties or methods of an object by placing a period (.) after the object name, followed by the property or method that needs to be accessed.</td>
+			</tr>
+			<tr>
+				<th><span class="keyword">constructor notation</span></th>
+				<td>Using the <code class="javascript"> new Object();</code> notation after the declared object name allows the developer to create a blank object that can then be appended with the specific key/values for it.</td>
+			</tr>
+			<tr>
+				<th><span class="keyword">this</span></th>
+				<td>The keyword this is used inside of functions and objects to refer to the specific instance of the object that is calling it. If used outside of a scope block, it refers to the window object.</td>
+			</tr>
+			<tr>
+				<th><span class="keyword">undefined</span></th>
+				<td></td>
+			</tr>
+		</table>
+      <hr>
+      <h2>User-Created Object Questions</h2>
+         <p id="j1">Literal notation allows you to individually assign each property value within it  according to what the developer requires. This is ideal if you're just needing one specific object with values or methods that are specific to it.</p>
+         <p id="j2">Constructor notation is highly efficient if you need to make a lot of instances of a single object. The constructor notation creates a sort of generic template for you to assign values as needed to create the object you need. This means you can tweak the objects differently, while making more than a few of them.</p>
+         <p id="j3">If a function is created in the global scope, it is built where the window function is the highest and default object. When the keyword <b>this</b> is used within the function, it refers to the window object and will respond as such.</p>
+         <p id="j4">When the function created is within an object, the keyword <b>this</b> refers to the object that is calling the function. It would NOT refer to the window object.</p>
+      <hr>
+      <h2>Storing Data</h2>
+         <p>See the JavaScript file for this section.</p>
+      <hr>
+      <h2>Built-in Objects</h2>
+      <table>
+			<tr>
+				<th></th>
+				<th><span class="keyword">Browser</span></th>
+				<th><span class="keyword">Document</span></th>
+				<th><span class="keyword">Global String</span></th>
+				<th><span class="keyword">Global Number</span></th>
+				<th><span class="keyword">Global Math</span></th>
+				<th><span class="keyword">Global Date</span></th>
+			</tr>
+			<tr>
+				<td>Example of a common method for that object</td>
+				<td><code class="javascript">window.screenX;</code></td>
+				<td><code class="javascript">document.lastModified;</code></td>
+				<td><code class="javascript">var sillyString = "got you."; sillyString.substring(4,6);</code></td>
+				<td><code class="javascript">var ourNum = 4; ourNum.isNaN();</code></td>
+				<td><code class="javascript">var ourDec = 4.3201; ourDec.ceil();</code></td>
+				<td><code class="javascript">var today = new Date(); today.getDay();</code></td>
+			</tr>
+			<tr>
+				<td>Explanation of example</td>
+				<td>It is the x coordinate of the mouse pointer on the screen. The upper left hand corner of the screen is (0,0).</td>
+				<td>Returns the date that the document was last changed or updated.</td>
+				<td>Returns the character located within the index specified in the arguments passed. In this case, it would return "you".</td>
+				<td>Returns true or false. In this case it would return false, because the value assigned to ourNum is 4, which is a number.</td>
+				<td>Returns 5. The ceil() method of the Global Math object rounds the decimal value up to the nearest integer.</td>
+				<td>Creates a Date object that is automatically assigned to the current day's date and time. The getDay() method of the Date object will return 2, which represents Tuesday.</td>
+			</tr>
+		</table>
+      <hr>
+      <h2>Data Types</h2>
+      <table>
+			<tr>
+				<th></th>
+				<th><span class="keyword">String</span></th>
+				<th><span class="keyword">Number</span></th>
+				<th><span class="keyword">Boolean</span></th>
+				<th><span class="keyword">Undefined</span></th>
+				<th><span class="keyword">Null</span></th>
+			</tr>
+			<tr>
+				<td>Provide an example of how to <b>declare</b> a variable with each of these data types.</td>
+				<td><code class="javascript">var stringVar = "Hi, I'm a string.";</code></td>
+				<td><code class="javascript">var numVar = 4;</code></td>
+				<td><code class="javascript">var boolVar = true;</code></td>
+				<td><code class="javascript">var nonInitializedVar;</code></td>
+				<td><code class="javascript">var varWithNullValue = null;</code></td>
+			</tr>
+		</table>
+      </main> <!-- ONLY use once per page.
+            It is for content unique to the page. And put directly inside body -->
+      <footer>
+         <p>Created by Libby Wichman</p>
+         <p>Last edit: 2019-09-10</p>
+      </footer>
+      </div>
+   </body>
+</html>

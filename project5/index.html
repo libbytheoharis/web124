@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<!-- Libby Wichman 10/03/2019-->
+<!-- Project for Chapters 5 -->
+<html lang="en">
+   <head>
+      <title>Review For 1-4</title>
+      <meta charset="utf-8" />
+      <!-- Meta tags are used by search engines -->
+      <meta name="author" content="Libby Wichman">
+      <meta name="description" content="Chapters 5 - WEB 124">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <link rel="stylesheet" href="styles/web124projects.css">
+   </head>
+   <body>
+      <div id="outerwrapper">
+      <h1>Project 5 - WEB 124</h1>
+      <main>
+         <h2>Chapter Debrief</h2>
+            <p id="q1">node vs element question</p>
+            <p id="q2">nodelist vs array</p>
+            <p id="q3">defending against cross-site scripting</p>
+            <hr>
+         <h2>Write some JavaScript!</h2>
+            <ul>
+               <li id="computers">Computers</li>
+                  <ul>
+                     <li id="networking" class="favorite">Networking</li>
+                     <li id="web">Web Development</li>
+                     <li id="data">Data Analytics</li>
+                  </ul>
+               <li>Business</li>
+                  <ul>
+                     <li id="finance" class="favorite">Finance</li>
+                     <li id="administration">Business Administration</li>
+                     <li id="marketing">Marketing</li>
+                  </ul>
+               <li id="autolist">Auto Technology</li>
+                  <ul>
+                     <li id="repair" class="favorite">Repair</li>
+                     <li id="maintenance">Maintenance</li>
+                     <li id="engines">Engines</li>
+                  </ul>
+               <li>Healthcare</li>
+                  <ul>
+                     <li id="biotech" class="favorite">Biotechnology</li>
+                     <li id="dental">Dental Hygiene</li>
+                     <li id="nursing">Nursing</li>
+                  </ul>
+            </ul>
+         <h2>Methods to traverse the DOM tree</h2>
+            <button id="getElementById" name="getElementById">getElementById()</button><label for="getElementById">Get the element with id="computers" and set the text color to #f00 (blue)</label>
+            <button id="querySelector" name="querySelector">querySelector()</button><label for="querySelector">Get the first element with class="favorite" (code the first list item in each of the four major categories (Computers, Business, Auto Technology, Healthcare) with the class="favorite") and set the text color to #f00 (red)</label>
+            <button id="getElementByClassName" name="getElementByClassName">getElementByClassName()</button><label for="getElementByClassName">Get the elements with a class="favorite" and set the text color to #0f0 (green)</label>
+            <button id="getElementsByTagName" name="getElementsByTagName">getElementsByTagName()</button><label for="getElementsByTagName">Get the elements with a tag name of h2 and set the background color to #0f0 (green)</label>
+            <button id="querySelectorAll" name="querySelectorAll">querySelectorAll</button><label for="querySelectorAll">Get all of the elements with a class="favorite" and set the text color to #0ff (turqoise)</label>
+         <h2>Properties to modify the DOM tree</h2>
+            <button id="parentNode" name="parentNode">parentNode</button><label for="parentNode">Change the textContent property of the parent of the element with id="networking" to Show me the money!</label>
+            <button id="previousSibling" name="previousSibling">previousSibling</button><label for="previousSibling">Change the innerHTML property of the previous sibling of the element with id="web" to ★ ★ ★ Information Technology ★ ★ ★ </label>
+            <button id="nextSibling" name="nextSibling">nextSibling</button><label for="nextSibling">Change the textContent property of the next sibling of the element with id="web" to Data Science</label>
+            <button id="className" name="className">className</button><label for="className">Change the className property of the element with id="data" to favorite (Then click the querySelectorAll button to change the text color of all elements with class="favorite" to turqoise to see if id="data" also turns turqoise.)</label>
+         <h2>Methods to modify the DOM tree</h2>
+            <button id="create" name="create">createElement() createTextNode() apendChild()</button><label for="create">Create a new li element. Create a new text node for the element with the text Science. Append the node as a child below Computers, above the Business list item.</label>
+            <button id="removeChild" name="removeChild">removeChild()</button><label for="removeChild">In the html, add id="autolist"to the opening unordered list tag in the Auto Technology area and id="engines" to the Engines list item. Use those references to remove the Engines list item from the Auto Technology list.</label>
+            <button id="hasAttributeAndRemove" name="hasAttributeAndRemove">hasAttribute() removeAttribute()</button><label for="hasAttributeAndRemove">Use the getElementsByTagName() method to select the second li element (Networking). If that element has class="favorite", remove the attribute. (Test this by using the querySelectorAll button to change the text color of all elements with class="favorite".)</label>
+      </main> <!-- ONLY use once per page.
+            It is for content unique to the page. And put directly inside body -->
+      <footer>
+         <p>Created by Libby Wichman</p>
+         <p>Last edit: 2019-10-07</p>
+      </footer>
+      </div>
+      <script src="scripts/project5.js"></script>
+   </body>
+</html>

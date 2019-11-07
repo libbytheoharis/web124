@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<!-- Libby Wichman 10/03/2019-->
+<!-- Final Project-->
+<html lang="en">
+   <head>
+      <title>Final Project</title>
+      <meta charset="utf-8" />
+      <!-- Meta tags are used by search engines -->
+      <meta name="author" content="Libby Wichman">
+      <meta name="description" content="Final Project - WEB 124">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <link rel="stylesheet" href="styles/web124projects.css">
+   </head>
+   <body>
+      <div id="outerwrapper">
+      <h1>Final Project - WEB 124</h1>
+      <main>
+         <h2>Final Project for WEB 124</h2>
+         <ol>
+            <li id="obj1">Manipulate the DOM.</li>
+               <p class="explanation" id="obj1explaination">Each core objective has a paragraph below, like this one. They explain what each of the objective buttons will do once pressed. This first objective button will change all the explanation paragraphs' font color to blue.</p>
+               <label for="obj1button">Manipulating the Document Object Model.</label>
+               <button id="obj1button" name="obj1button">Objective 1</button>
+               <br>
+            <li id="obj2">Add and remove HypterText Markup Language (HTML) document nodes.</li>
+               <p class="explanation" id="obj2explaination">Another paragraph will be added above this one when the objective 2 button is pressed.</p>
+               <label for="obj2button">Adding and removing Elements.</label>
+               <button id="obj2button" name="obj2button">Objective 2</button>
+               <br>
+            <li id="obj3">Control the BOM</li>
+               <p class="explanation" id="obj3explaination">When you press the objective 3 button, the size of the screen you're using will show here.</p>
+               <label for="obj3button">Controling the Browser Object Model.</label>
+               <button id="obj3button" name="obj3button">Objective 3</button>
+               <br>
+            <li id="obj4">Enhance and validate form data</li>
+               <p class="explanation" id="obj4explaination">Enter a word below then click the objective 4 button. If there are any numbers within the text box, it will ask you to reenter the word.</p>
+               <label for="obj4button">Enhancing and validating form data.</label>
+               <button id="obj4button" name="obj4button">Objective 4</button>
+               <form>
+                  <input type="text" id="inputForm" placeholder="Enter a word here.">
+                  <label for="inputForm" id="response"></label>
+               </form>
+               <br>
+            <li id="obj5">Create scripts using built-in JavaScript classes.</li>
+               <p class="explanation" id="obj5explaination">Here's a little adding calculator for you. When you're ready for the answer, press the objective 5 button.</p>
+               <p>Calculator:<br><br>
+                  <label for="number1">Number Value 1</label>
+                  <input type="number1" id="number1" name="number1">
+                  <label for="number2">Number Value 2</label>
+                  <input type="number2" id="number2" name="number2">
+               </p>
+               <p id="result"></p>
+               <label for="obj5button">Creating scripts with built in classes.</label>
+               <button id="obj5button" name="obj5button">Objective 5</button>
+               <br>
+            <li id="obj6">Manipulate data in strings and arrays.</li>
+               <p class="explanation" id="obj6explaination">Input a word in the text area below. Press the objective 6 button. Your word will appear backwards!</p>
+               <form>
+                  <input type="text" id="objective6Input" placeholder="Enter a word here.">
+                  <label for="objective6Input" id="objective6Label"></label>
+               </form>
+               <p id="objective6Result"></p>
+               <label for="obj6button">Manipulating data in strings and arrays.</label>
+               <button id="obj6button" name="obj6button">Objective 6</button>
+               <br>
+            <li id="obj7">Validate JavaScript and apply advanced debugging techniques.</li>
+               <p class="explanation" id="obj7explaination">Press F12 to open the Web Dev Tools in your browser. Navigate to the console. Press objective 7 button to get a message.</p>
+               <label for="obj7button">Validating JavaScript and debugging.</label>
+               <button id="obj7button" name="obj7button">Objective 7</button>
+               <br>
+            <li id="obj8">Apply coding techniques to address JavaScript security issues.</li>
+               <p class="explanation" id="obj8explaination">Press the objective 8 button to see what security measures can be taken. The list will appear in the console.</p>
+               <p id="securityList"></p>
+               <label for="obj8button">Addressing JavaScript security issues.</label>
+               <button id="obj8button" name="obj8button">Objective 8</button>
+         </ol>
+         <hr>
+      </main> <!-- ONLY use once per page.
+            It is for content unique to the page. And put directly inside body -->
+      <footer>
+         <p>Created by Libby Wichman</p>
+         <p>Last edit: 2019-10-22</p>
+      </footer>
+      </div>
+      <script src="scripts/finalproject.js"></script>
+   </body>
+</html>

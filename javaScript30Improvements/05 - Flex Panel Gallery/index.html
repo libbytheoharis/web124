@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Flex Panels 💪</title>
+  <meta name="author" content="Libby Wichman">
+  <meta name="date" content="2019-09-04">
+  <!-- Libby Wichman - JavaScript30 1 of 5-->
+  <!-- 2019-09-04 -->
+  <!-- Adapted from https://javascript30.com/
+      Flex Panels-->
+  <meta name="description" content="Project 2 for WEB 124">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!--
+      Added class="panel panel6". This increasing the number of panels used to create an interactive website. I did not replace the classes with IDs, as the funcitons that enable the flex panels are specific and require the classList, which I am not sure how to replicate with ids.
+      Added class="changingWords" to the center paragraph in each class="panel panel*" div. Switched the text to WEB124. On transition, it will become the JavaScript30's original text, Let's Take It All In...Added the !!! to accomodate the 6 characters needed for WEB124.
+   -->
+   <link href='https://fonts.googleapis.com/css?family=Amatic+SC' rel='stylesheet' type='text/css'>
+   <link rel="stylesheet" href="flexpanelgallery.css">
+</head>
+<body>
+  <div class="panels">
+    <div class="panel panel1">
+      <p>Hey</p>
+      <p class="changingWords" id=char1>W</p>
+      <p>Dance</p>
+    </div>
+    <div class="panel panel2">
+      <p>Give</p>
+      <p class="changingWords" id=char2>E</p>
+      <p>Receive</p>
+    </div>
+    <div class="panel panel3">
+      <p>Experience</p>
+      <p class="changingWords" id=char3>B</p>
+      <p>Today</p>
+    </div>
+    <div class="panel panel4">
+      <p>Give</p>
+      <p class="changingWords" id=char4>1</p>
+      <p>You can</p>
+    </div>
+    <div class="panel panel5">
+      <p>Life</p>
+      <p class="changingWords" id=char5>2</p>
+      <p>Motion</p>
+    </div>
+    <div class="panel panel6">
+      <p>!</p>
+      <p class="changingWords" id=char6>4</p>
+      <p>!</p>
+   </div>
+  </div>
+  <script src="flexpanelgallery.js"></script>
+</body>
+</html>

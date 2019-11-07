@@ -1,0 +1,41 @@
+/* Libby Wichman
+*  Project 2
+*  2019-09-03
+*/
+
+
+#outerwrapper {
+   width: 90%;
+   margin: 0 auto 0 auto;
+   padding: 0.5em 1.5em;
+   background-color: #eee;
+}
+
+/* table styles */
+table, td, th {
+   border: 1.5px #BE0000 solid;
+   padding: 0.5em
+}
+
+th {
+   width: 15%;
+}
+
+/* code styles */
+
+code {
+   font-family: "Courier New", monospace;
+   font-size: 1em;
+}
+
+.html {
+   color: #00f;
+}
+
+.css {
+   color: #FF69B4;
+}
+
+.javascript {
+   color: #2fb74f;
+}

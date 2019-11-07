@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<!-- Libby Wichman 09/03/2019-->
+<!-- Project 2 -->
+<html lang="en">
+   <head>
+      <title>PROJECT 2</title>
+      <meta charset="utf-8" />
+      <!-- Meta tags are used by search engines -->
+      <meta name="author" content="Libby Wichman">
+      <meta name="description" content="Project 2 for WEB 124">
+
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <link rel="stylesheet" href="web124projects.css">
+   </head>
+   <body>
+      <div id="outerwrapper">
+      <h1>WEB 124 - Project 2</h1>
+      <main>
+      <h2>Chapter Debrief</h2>
+         <p id="q1">HTML is case insensitive while JavaScript is not. Best practice is to use lowercase for HTML. This makes it a bit odd to use camel case within the id attribute's value. Is it best to think of those ID attribute values as JavaScript keys within the HTML?</p>
+         <p id="q2">I had trouble finding my errors, but I waited until after I had finished typing all of the code for the Chapter 2 example. I know I need to start checking for errors much sooner. When do you first start debugging? How often?</p>
+         <p id="q3">Given each ID value on a webpage must be unique, how do large websites keep track of all those unique values? PS I really appreciate how detailed and forthcoming you answer our questions. You even approach the questions and answers from different perspectives, which is awesome.</p>
+      <hr>
+      <h2>JavaScript Syntax</h2>
+         <table>
+            <tr>
+               <th>JavaScript syntax characters</th>
+               <th>description</th>
+               <th>provide an example</th>
+            </tr>
+            <tr>
+               <td>when do you use the semicolon ;</td>
+               <td>used to terminate a full statement</td>
+               <td><code class="javascript">console.log("Hi World!");</code></td>
+            </tr>
+            <tr>
+               <td>when do you use { curly braces }</td>
+               <td>used to surround code blocks<br><br>
+			also used to create a custom object (but we are not that far in class yet so I wanted to provide this example)</td>
+               <td><code class="javascript">if (user === "Lisa") {<br>
+			&nbsp;&nbsp;console.log("Hi Lisa!" );<br>
+			}</code><br>
+			<code class="javascript">const lisa = {
+						<br>&nbsp;&nbsp;lname: 'Friedrichsen',<br>
+			               &nbsp;&nbsp;title: 'Professor',<br>
+						   &nbsp;&nbsp;school: 'JCCC'<br>
+						   }</code></td>
+            </tr>
+            <tr>
+               <td>how do you write a one-line comment</td>
+               <td>Two forward slashes prior to the comment you want to type will comment out the rest of the line.</td>
+               <td><code class="javascript">// Comment here.</code></td>
+            </tr>
+            <tr>
+               <td>how do you write multi-line comments</td>
+               <td>Multiple line comments begin with a  forward slash and asterisk, then the comment, then asterisk and forward slash close the multiple line comment.</td>
+               <td><code class="javascript">/* Comment here in multiple lines */</code></td>
+            </tr>
+            <tr>
+               <td>how do you declare a variable</td>
+               <td>A variable that will change later in the application is declared with "let" followed by the variable identifier.<br> A variable that does not change during the application can be declare with "const" followed by the variable identifier.</td>
+               <td><code class="javascript">let changableVarName; <br>const unchangingVarName</code></td>
+            </tr>
+            <tr>
+               <td>how do you assign a textual value to a variable</td>
+               <td>Textual values can be assigned using the assignment operator, =, followed by either opening and closing single quotes (aka apostrophes) or opening and closing double quotes, where the value to be assigned sits in between the pair of quotes.</td>
+               <td><code class="javascript">let name = "Libby";<br>let name = 'Libby';</code></td>
+            </tr>
+            <tr>
+               <td>when do you use 'apostrophes' vs. "quotation marks"</td>
+               <td>Either one can be used, as long as you're consistent.</td>
+               <td><code class="javascript">let varName = "This is okay to use"; <br>let var2Name = 'This is okay too';</code></td>
+            </tr>
+            <tr>
+               <td>when do you use the backwards slash \</td>
+               <td>The backwards slash can be used to escape special characters.</td>
+               <td><code class="javascript">let varName = "This is okay to \n use";</code></td>
+            </tr>
+            <tr>
+               <td>what is the most straight forward way of creating an array?</td>
+               <td>Type a regular variable declaration using let or const, then following the assignment operator, surround all of the multiple elements to be within the array between square brackets</td>
+               <td><code class="javascript">let arrayName = ["Jerry", "George", "Kramer", "Elaine"];</code></td>
+            </tr>
+         </table>
+      <hr>
+      <h2>Let's Write Some JavaScript!</h2>
+         <p id="p1">Johnson County Community College</p>
+         <p id="p2">Johnson County Community College</p>
+         <p id="p3">Johnson County Community College</p>
+         <p id="p4">Johnson County Community College</p>
+         <p id="p5">Johnson County Community College</p>
+         <p id="p6">Johnson County Community College</p>
+      <hr>
+      <h2>Review Questions:</h2>
+         <p id="p7">The JavaScript in this project runs after the rest of the body of the HTML code is rendered in the browser.</p>
+         <p id="p8">The + is used for concatenation. This is an available method to use for both strings and numbers. However, JavaScript will automatically convert the number to a string if these two different primitive data types are attempted to be concatenated. When multiplication is used between a string and number datatype, there is not a way for JavaScript to handle that, so NaN, not-a-number, is output as the value.</p>
+         <p id="p9">TextContent is part of the Document Object Model. It uses straight text and is faster then the innerHTML option. InnerHTML parses the string passed as HTML, so it takes a step longer for the browser to render the result.</p>
+         <p id="p10">JavaScript is built to automatically insert a semicolon to the end of a JavaScript statement automatically. This is very different from other programming languages. It is not necessary, but makes for easier reading if a semicolon is typed at the end of each statement. </p>
+         <p id="p11">It is okay to break a statement onto two lines in JavaScript when a statement is very long. In this situation, break the line after an operator, and no special character is necessary. To do it within a text string, close the string with it's matching closing quote and use the + operator to join the enclosed string on the next line.</p>
+         <p id="p12"></p>
+      <br>
+      </main> <!-- ONLY use once per page.
+            It is for content unique to the page. And put directly inside body -->
+      <footer>
+         <p>Created by Libby Wichman</p>
+         <p>Last edit: 2019-09-03</p>
+      </footer>
+      </div>
+      <script src="scripts/project2.js"></script>
+   </body>
+</html>

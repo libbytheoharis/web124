@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<!-- Libby Wichman 07/20/2019-->
+<!-- PROJECT NAME -->
+<html lang="en">
+   <head>
+      <title>PROJECT 1</title>
+      <meta charset="utf-8" />
+      <!-- Meta tags are used by search engines -->
+      <meta name="author" content="Libby Wichman">
+      <meta name="description" content="Project 1 for WEB 124">
+
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <link rel="stylesheet" href="web124projects.css">
+   </head>
+   <body>
+      <div id="outerwrapper">
+      <h1>WEB 124 - Project 1</h1>
+      <main>
+      <h2>Chapter Debrief</h2>
+         <p id="q1">Are there ever more than one JavaScript file per webpage?</p>
+         <p id="q2">Are JavaScript files usually named the same as the html document that it is to modify/apply to?</p>
+         <p id="q3">Is it the interpreter within the Browser that knows how Date() is defined?</p>
+         <!-- Am I indenting here correctly? It's been a while since I've done HTML, and I want to be sure I'm doing it according to best practices -->
+      <hr>
+      <h2>HTML - CSS - JavaScript Essential Concepts</h2>
+         <table>
+            <tr>
+         	     <th>Language ==></th>
+                 <th><span class="html keyword">HTML</span></th>
+                 <th><span class="css keyword">CSS</span></th>
+                 <th><span class="javascript keyword">JavaScript</span></th>
+            </tr>
+            <tr>
+               <th>Acronym</th>
+               <td>HyperText Markup Language</td>
+               <td>Cascading Style Sheet</td>
+               <td>JavaScript is not an acronym</td>
+            </tr>
+            <tr>
+               <th>Definition</th>
+               <td>The syntax used to provide the structure of a webpage</td>
+               <td>The format and structure of how to make the HTML elements on a webpage stylized</td>
+               <td>A scripting language that is written for a webpage, then interpreted by the user's browser</td>
+            </tr>
+            <tr>
+               <th>Purpose</th>
+               <td>The syntax used to provide the structure of a webpage</td>
+               <td>CSS defines and specifies how elements/objects appear on a webpage</td>
+               <td>JavaScript allows the user to interact with the webpage and its content</td>
+            </tr>
+            <tr>
+               <th>Comment Syntax</th>
+               <td>&lt;--! Comment here --&gt;</td>
+               <td>/* Comment here */</td>
+               <td>/* Comment here for multiple lines */ or // Comment here to comment the rest of the line</td>
+            </tr>
+            <tr>
+               <th>Code editor that will be used in class</th>
+               <td>Atom or Notepad++</td>
+               <td>Atom or Notepad++</td>
+               <td>Atom or Notepad++</td>
+            </tr>
+            <tr>
+               <th>Validator tool</th>
+               <td><a href="https://validator.w3.org/">The HTML validator at w3.org</a></td>
+               <td><a href="https://jigsaw.w3.org/css-validator/">The CSS validator at w3.org</a></td>
+               <td><a href="http://jslint.com/">jslint</a></td>
+            </tr>
+            <tr>
+               <th>Discuss case sensitivity in this language</th>
+               <td>HTML 5 is not case sensitive but current best practice is to write all HTML in lowercase characters with the exception of the &lt;!DOCTYPE html&gt; statement which is equally acceptable in either upper or lowercase &lt;!doctype html&gt;.</td>
+               <td>CSS 3 is not case sensitive but current best practice is to write all CSS in lowercase characters except for proper font names such as Arial, Georgia, or Times New Roman. <br>Another best practice is to match case sensitivity in CSS selectors to their id or class attribute values in the html for readability.</td>
+               <td>JavaScript is case sensitive! This is really important with variables!</td>
+            </tr>
+         </table>
+      <hr>
+      <h2>HTML - CSS - JavaScrpt Essential Terminology</h2>
+         <table>
+            <tr>
+               <th>Terminology</th>
+               <th>Language</th>
+               <th>Purpose</th>
+               <th>Example</th>
+            </tr>
+            <tr>
+      			<th><span class="html keyword">element</span></th>
+      			<td>HTML</td>
+      			<td>to semantically describe and structure content on a web page</td>
+      			<td>&lt;p&gt;These tags and text constitute a p (paragraph) element.&lt;/p&gt;</td>
+      		</tr>
+      		<tr>
+      			<th><span class="html keyword">attribute</span></th>
+      			<td>HTML</td>
+      			<td>Attributes tell more about the element with which they are associated.</td>
+      			<td>In the following code, the "xyz" is the attribute: <code>&lt;p id="xyz"&gt;</code></td>
+      		</tr>
+      		<tr>
+      			<th><span class="css keyword">selector</span></th>
+      			<td>CSS</td>
+      			<td>Indicates which html element or elements that a specific CSS rule apply to.</td>
+      			<td>In the following code, the selector shown is for .holidayItem: <code class="css">.holidayItem {color: pink;}</code></td>
+      		</tr>
+      		<tr>
+      			<th><span class="css keyword">property</span></th>
+      			<td>CSS</td>
+      			<td>Property refers to an aspect of the selector that you want to control or modify.</td>
+      			<td>In the following code, the property name is color and the property vale is pink: <code class="css">.holidayItem {color: pink;}</code></td>
+      		</tr>
+      		<tr>
+      			<th><span class="css keyword">declaration</span></th>
+      			<td>CSS</td>
+      			<td>The declaration refers to the block of code that comes after the selector. This includes the curly braces which surround the property name(s) and value(s).</td>
+      			<td>In the following code, the declaration block comes after .fruit: <code class="css">.fruit {color: pink;}</code></td>
+      		</tr>
+      		<tr>
+      			<th><span class="javascript keyword">object</span></th>
+      			<td>JavaScript</td>
+      			<td>An object is a collection or representation of associated data</td>
+      			<td>In the following code, today is considered an object: <code class="javascript">var today = new Date();</code></td>
+      		</tr>
+      		<tr>
+      			<th><span class="javascript keyword">method</span></th>
+      			<td>JavaScript</td>
+      			<td>A method represents things that can be done with an object.</td>
+      			<td>In the following code, getHours() is a method: <code class="javascript">today.getHours();</code></td>
+      		</tr>
+      		<tr>
+      			<th><span class="javascript keyword">event</span></th>
+      			<td>JavaScript</td>
+      			<td>An event is a point of interaction with a user, another computer, or another object.</td>
+      			<td>An example would be when a user clicks on a button while on a webpage.</td>
+      		</tr>
+      		<tr>
+      			<th><span class="javascript keyword">property</span></th>
+      			<td>JavaScript</td>
+      			<td>A property is a characteristic of an object that has both a name and a value.</td>
+      			<td>This can be any number of characteristics, including the color of the object, what type of object it is or what it's current state is (active, static, paused)</td>
+      		</tr>
+         </table>
+      <hr>
+      <h2>How do HTML id and class attributes connect to CSS selectors?</h2>
+      <ol>
+         <li><code class="html">&lt;p id="xyz"&gt;</code>Item number xyz.<code class="html">&lt;/p&gt;</code> connects to what selector in the css? <code class="css">#xyz {}</code></li>
+         <li>How many html elements may have the same <code class="html">id="xyz"</code> attribute value on a given page? Only one, unique id value may appear on one page.</li>
+         <li><code class="html">&lt;p class="holidayItem"&gt;</code>Seasonal item for sale.<code class="html">&lt;/p&gt;</code> connects to what selector in the css? <code class="css">.holidayItem {}</code></li>
+         <li>How many html elements have the same <code class="html"> class="holidayItem"</code> attribute value on a given page? There can be as few or as many as the developer requires.</li>
+      </ol>
+      <hr>
+      <h2>Essential JavaScript best practices</h2>
+      <ol>
+   		<li>inline vs. embedded vs. external JavaScript using examples.
+   		   <p>Pro: It is considered best practice to code an external JavaScript file that is externally linked to the web-page. This allows for re-usability, maintainability and clear organizational separation. It allows the developer to delay the execution of events until a certain thing occurs.</p>
+   			<p>Con: Inline JavaScript is executed immediate when the page is rendered. This doesn't allows for user interaction if everything must be executed at once.</p>
+   			<p>Code Example: Inline JavaScript is written between script tage: <code class="javascript">&lt;script&gt;put JavaScript here&lt;script&gt;</code> This is different from an externally referenced javascript file, which is included right before the closing html body tag as follows: <code class="javascript">&lt;script src="javaScriptTemplate.js"&gt;&lt;/script&gt;</code></p>
+   		</li>
+   		<li>indenting your code.
+   			<p>Pro: Creates very easy to follow, clean and organized code. This is key for ease of use and maintainablity, especially if you're part of a team.</p>
+   			<p>Con: Can be time consuming at first.</p>
+   			<p>Code Example: Un-indented code...&lt;html&gt;&lt;body&gt;Content&lt;/body&gt;&lt;/html&gt;</p>
+   		</li>
+   		<li>inserting code comments.
+   			<p>Pro: Gives the code some context, especially if there are many sections that are doing different tasks. This is incredibly invaluable in a team setting, as well as for yourself.</p>
+   			<p>Con: Takes time. Can get excessive if done without a critical eye.</p>
+   			<p>Code Example: Use &lt;!-- Comment here --&gt; anywhere in the code that will help someone without any prior knowledge of the project for which the code was written.</p>
+   		</li>
+   	</ol>
+   	<hr>
+      <h2>Java vs JavaScript</h2>
+      <ul>
+         <li>What is the general purpose for each language?</li>
+            <p>Java is a complied programming languages that can be used to build applications or for more backend processes</p>
+            <p>JavaScript is a scripting language that started as a way to interact with users of web pages. Since then, it has become useful in a range of ways, from making online browser games, web page based applications and even server side scripting.</p>
+         <li>Strict vs loose variable typing - what does this mean as it relates to Java and JavaScript?<li>
+            <p>Java is considered a strict language. This means that when variable are declared, the type of the variable must be explicitly stated. This variable type will not change for the entirety of the program, although the value of it may.</p>
+            <p>JavaScript is a loose variable typed language. This means that a variable type need not be declared, as JavaScript can keep track of all that for you. It also allows variables to change types as the program is written or interpreted.</p>
+         <li>Where is the source code for each language complied or interpreted?</li>
+            <p>Java is complied through a compiler. Often this is built in to the IDE a programmer is using. For instance, Visual Studio. Whereas, JavaScript is interpreted by the interpreter within the browser of the vistor.</p>
+      </ul>
+      <br>
+      </main> <!-- ONLY use once per page.
+            It is for content unique to the page. And put directly inside body -->
+      <footer>
+         <p>Created by Libby Wichman</p>
+         <p>Last edit: 2019-08-27</p>
+      </footer>
+      </div>
+      <script src="javaScriptTemplate.js"></script>
+   </body>
+</html>

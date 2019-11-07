@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+   <head>
+      <meta charset="utf-8">
+      <title>Type Ahead</title>
+      <link rel="stylesheet" href="styles/style.css">
+      <meta name="author" content="Libby Wichman">
+      <meta name="date" content="2019-09-15">
+         <!-- Libby Wichman - JavaScript30 3 of 5-->
+         <!-- 2019-09-15 -->
+         <!-- Adapted from https://javascript30.com/ - Ajax Type Ahead -->
+      <meta name="description" content="JavaScript30 - 3 of 5">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+         <!--
+         Things I did:
+         - I added the id attributes to the span elements. It replaced the class attributes. Since the class attributes can be used more than once on a webpage, it is best to just use id. It makes it more specific and easier to locate.
+         - I added a <p><p> element prior to the form to allow the user to see how many of the total records match their search.
+         - I added a heading for clarity.
+         -->
+   </head>
+   <body>
+      <div id="outerwrapper">
+         <h1>Typing Ahead</h1>
+         <p id="numberOfSearchResults">Results will show here.</p>
+         <br>
+         <form class="search-form">
+         <input type="text" class="search" placeholder="City or State">
+         <ul class="suggestions">
+            <li>Filter for a city</li>
+            <li>or a state</li>
+         </ul>
+      </form>
+
+      <footer>
+         <p>Created by Libby Wichman</p>
+         <p>Last edit: 2019-09-15</p>
+      </footer>
+      </div>
+      <script src="scripts/typeahead.js"></script>
+   </body>
+</html>

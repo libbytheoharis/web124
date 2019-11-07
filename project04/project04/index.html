@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<!-- Libby Wichman 09/20/2019-->
+<!-- Project 4 -->
+<html lang="en">
+   <head>
+      <title>PROJECT 4</title>
+      <meta charset="utf-8" />
+      <!-- Meta tags are used by search engines -->
+      <meta name="author" content="Libby Wichman">
+      <meta name="description" content="Project 4 for WEB 124">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   </head>
+   <body>
+      <style>
+      #outerwrapper {
+         width: 90%;
+         margin: 0 auto 0 auto;
+         padding: 0.5em 1.5em;
+         background-color: #eee;
+      }
+
+      /* table styles */
+      table, td, th {
+         border: 1.5px #BE0000 solid;
+         padding: 0.5em
+      }
+
+      th {
+         width: 15%;
+      }
+
+      /* code styles */
+
+      code {
+         font-family: "Courier New", monospace;
+         font-size: 1em;
+      }
+
+      .html {
+         color: #00f;
+      }
+
+      .css {
+         color: #FF69B4;
+      }
+
+      .javascript {
+         color: #2fb74f;
+      }
+      </style>
+      <div id="outerwrapper">
+      <h1>WEB 124 - Project 4</h1>
+      <main>
+      <h2>Chapter Debrief</h2>
+         <p id="q1">How do you use the console to step into a function for debugging purposes?</p>
+         <p id="q2">It looks like msg can grow to be a large block of text/string, what would you say is too big, or too much to input onto the screen?</p>
+         <p id="q3">What is the most frequently used for loop format you see?</p>
+      <hr>
+      <h2>Comparison Operators</h2>
+         <table>
+            <tr>
+               <th>Operators</th>
+               <th>Meaning</th>
+               <th>Example and Return Value</th>
+               <th>Explanation of Example</th>
+            </tr>
+            <tr>
+               <th class="javascript">==</th>
+               <td>Is Equal To</td>
+               <td>'Libby' == 'Libby' returns true.</td>
+               <td>The string values on both sides of the == operator are identical.</td>
+            </tr>
+            <tr>
+               <th class="javascript">===</th>
+               <td>Strict Equal To</td>
+               <td>7 === '7' returns false.</td>
+               <td>The numeric value on the left side of the === operator does not match the string value of 7 on the right side. Since these are not the same data type AND the same value, false is returned.</td>
+            </tr>
+            <tr>
+               <th class="javascript">!=</th>
+               <td>Is Not Equal To</td>
+               <td>5 != '5' returns false.</td>
+               <td>Since the non-strict operator != will automatically take numeric string value and convert it to numeric in JavaScript, the operator understands these two values as being equal, so it returns false.</td>
+            </tr>
+            <tr>
+               <th class="javascript">!==</th>
+               <td>Strict Is Not Equal To</td>
+               <td>5 !== '5' returns true.</td>
+               <td>Using a strict is not equal to operator will prevent the automatic type conversion and take the values being compared as they are passed. Since the numeric value of 5 and the string value of 5 are not the same, the expression evaluates to true.</td>
+            </tr>
+            <tr>
+               <th class="javascript">&gt;</th>
+               <td>Greater Than</td>
+               <td>3 &gt; 6 returns false.</td>
+               <td>Because the value of 3 is less than, and NOT greater to 6, false is returned.</td>
+            </tr>
+            <tr>
+               <th class="javascript">&gt;=</th>
+               <td>Greater Than Or Equal To</td>
+               <td>4 &gt; 4 returns true.</td>
+               <td>The numeric value of 4 is more than or equal to the value of 4. Since this is true, the value of true is returned.</td>
+            </tr>
+            <tr>
+               <th class="javascript">&lt;</th>
+               <td>Less Than</td>
+               <td>4 &lt; 5 returns true.</td>
+               <td>The numeric value of 4 is less than the numeric value of 5, so true is returned.</td>
+            </tr>
+            <tr>
+               <th class="javascript">&lt;=</th>
+               <td>Less Than Or Equal To</td>
+               <td>6 &lt;= 3 returns false.</td>
+               <td>The numeric value of 6 is NOT less than the numeric value of 3, so false is returned.</td>
+            </tr>
+            <tr>
+               <th class="javascript">&&</th>
+               <td>Logical And</td>
+               <td>(4 &gt; 2) && (3 &lt; 6) returns true.</td>
+               <td>We know that 4 is more an 2, so the left side of && is true. Since the right side is also true, true is returned. For the logical and, either side of the expression must evaulate to true for a true to be returned. If both side do not equal true, false will be returned.</td>
+            </tr>
+            <tr>
+               <th class="javascript">||</th>
+               <td>Logical Or</td>
+               <td>(4 &lt; 2) || (3 &gt; 6) returns false.</td>
+               <td>The logical not must have either one of both sides of it's expression evaluate to true. If neither side is true, false is returned.</td>
+            </tr>
+            <tr>
+               <th class="javascript">!</th>
+               <td>Logical Not</td>
+               <td>!(3 === '3') returns true.</td>
+               <td>Since numeric 3 and string value 3 are NOT equal, we get false. The logical not tells us to take that value and make it the oposite, which comes to true.</td>
+            </tr>
+      	</table>
+      <hr>
+      <h2>Syntax Review</h2>
+         <table>
+            <tr>
+               <th>Characters »»</th>
+               <th>(parentheses)</th>
+               <th>{curly braces}</th>
+               <th>[square brackets]</th>
+               <th>+ symbol</th>
+            </tr>
+            <tr>
+               <th>usage 1</th>
+               <td>(parentheses are used to contain an expression that needs to be evaluated prior to moving on to the next operation or expression.)</td>
+               <td>{curly braces contain a code block for function}</td>
+               <td>[square brackets have only one usage, to identify an array index]</td>
+               <td>The + is used to add two variables or numbers together.</td>
+            </tr>
+            <tr>
+               <th>usage 1 example</th>
+               <td class="javascript">x + (3 * 5)</td>
+               <td class="javascript">function area(width, height) { return width * height;};</td>
+               <td class="javascript">someArrayName[0]</td>
+               <td class="javascript">3 + 4</td>
+            </tr>
+            <tr>
+               <th>usage 2</th>
+               <td>(parentheses are used to contain a conditional expression that tests whether the expression within it is true or false. This example is specific to a conditional expression prior to a loop of some sort.)</td>
+               <td>{curly braces are also used to contain the code block that must be executed after a conditional statement. The code would not otherwise be executed.}</td>
+               <td>[square brackets have only one usage, to identify an array index]</td>
+               <td>The + can also be used as a unary operator that increments the varaible or number to which it modifies.</td>
+            </tr>
+            <tr>
+               <th>usage 2 example</th>
+               <td class="javascript">if (x > y) then {...}</td>
+               <td class="javascript">if (x > y) then { return x;}</td>
+               <td class="javascript">someArrayName[0]</td>
+               <td class="javascript">a++</td>
+            </tr>
+         </table>
+      <hr>
+      <h2>Write some JavaScript!</h2>
+         <p>Testing truthy and falsy.<br><br>
+            <label for="value1">Number Value 1</label>
+            <input type="number" id="value1" name="value1">
+            <label for="value2">String Value 2</label>
+            <input type="number" id="value2" name="value2">
+            <br><br>
+            <button type="button" id="testStrictButton">Strict</button>
+            <br>
+            <button type="button" id="testNotStrictButton">Not Strict</button>
+            <br>
+         </p>
+            <p id="result"></p>
+      <hr>
+      </main> <!-- ONLY use once per page.
+            It is for content unique to the page. And put directly inside body -->
+      <footer>
+         <p>Created by Libby Wichman</p>
+         <p>Last edit: 2019-09-23</p>
+      </footer>
+      </div>
+      <script>
+         function testNotStrict() {
+            var firstValue = parseInt(document.getElementById("value1").value);
+            console.log(firstValue);
+            var secondValue = parseInt(document.getElementById("value2").value);
+            console.log(secondValue);
+            if (firstValue == secondValue){
+               document.getElementById("result").textContent = "Truthy";
+            } else {
+               document.getElementById("result").textContent = "Falsy";
+            }
+         };
+
+         function testStrict() {
+            var firstValue = parseInt(document.getElementById("value1").value);
+            console.log(firstValue);
+            var secondValue = parseInt(document.getElementById("value2").value);
+            console.log(secondValue);
+            switch (firstValue === secondValue) {
+            case true:
+               document.getElementById("result").textContent = "Truthy";
+               break;
+            case false:
+               document.getElementById("result").textContent = "Falsy";
+               break;
+            default:
+               document.getElementById("result").textContent = "Falsy";
+               break;
+            }
+         };
+
+         document.getElementById("testNotStrictButton").addEventListener('click', testNotStrict);
+         document.getElementById("testStrictButton").addEventListener('click', testStrict);
+
+         window.onload = function (){
+            console.log("window loaded");
+
+         }
+      </script>
+   </body>
+</html>

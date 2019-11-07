@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Hold Shift to Check Multiple Checkboxes</title>
+  <link rel="stylesheet" href="styles/style.css">
+  <meta name="author" content="Libby Wichman">
+  <meta name="date" content="2019-09-24">
+     <!-- Libby Wichman - JavaScript30 4 of 5-->
+     <!-- 2019-09-24 -->
+     <!-- Adapted from https://javascript30.com/ - Hold Shift to Check Multiple Checkboxes. -->
+ <meta name="description" content="JavaScript30 - 4 of 5">
+ <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <!--
+     Things I did:
+     - Removed the <p></p> elements and changed it to individual labels.
+     - Added the ids for each checkbox.
+     - Added appropriate for attribute for each associated checkbox.
+     -->
+</head>
+<body>
+   <!--
+   The following is a common layout you would see in an email client.
+
+   When a user clicks a checkbox, holds Shift, and then clicks another checkbox a few rows down, all the checkboxes in-between those two checkboxes should be checked.
+
+  -->
+  <div class="inbox">
+    <div class="item">
+      <input type="checkbox" id="item1">
+      <label for="item1">Here's the first item</label>
+    </div>
+    <div class="item">
+      <input type="checkbox" id="item2">
+      <label for="item2">Check one item</label>
+    </div>
+    <div class="item">
+      <input type="checkbox" id="item3">
+      <label for="item3">Hold down your Shift key</label>
+    </div>
+    <div class="item">
+      <input type="checkbox" id="item4">
+      <label for="item4">Frameworks>Check a lower item</label>
+    </div>
+    <div class="item">
+      <input type="checkbox" id="item5">
+      <label for="item5">Everything in between should also be set to checked</label>
+    </div>
+    <div class="item">
+      <input type="checkbox" id="item6">
+      <label for="item6">Try do it without any libraries</label>
+    </div>
+    <div class="item">
+      <input type="checkbox" id="item7">
+      <label for="item7">Just regular JavaScript</label>
+    </div>
+    <div class="item">
+      <input type="checkbox" id="item8">
+      <label for="item8">Good Luck!</label>
+    </div>
+    <div class="item">
+      <input type="checkbox" id="item9">
+      <label for="item8">Don't forget to tweet your result!</label>
+    </div>
+  </div>
+  <script src="scripts/holdShiftAndCheckboxes.js"></script>
+</body>
+</html>
